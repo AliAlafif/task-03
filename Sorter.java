@@ -1,9 +1,13 @@
+import java.util.Arrays;
+
 public class Sorter{
     public static void main(String[] args) {
         System.out.println("ALi Alafif");
+        int[] a={5,6,2,4,6};
+        System.out.println(Arrays.toString(SelectionSort(a)));
     }
 
-public int[] SelectionSort(int[] array){
+public static int[] SelectionSort(int[] array){
 for(int i=0;i<array.length;i++){
     int min =i;
     for(int j=i+1;j<array.length;j++){
@@ -18,5 +22,9 @@ for(int i=0;i<array.length;i++){
     }
 }
 return array;
+}
+
+public static int[] sort(int[] array){
+    return SelectionSort(array);
 }
 }
