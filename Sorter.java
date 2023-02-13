@@ -29,6 +29,9 @@ return array;
 public static int[] sort(int[] array){
     return SelectionSort(array);
 }
+public static int[] sort1(int[] array){
+    return insertionSort(array);
+}
 
 public static int[] insertionSort(int[] array){
     for(int i=1;i<array.length;i++){
